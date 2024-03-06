@@ -1,6 +1,6 @@
 .blob {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   /* background-color: aqua; */
   border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
   box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0,
@@ -35,8 +35,8 @@
 
 .blob > h1 {
   position: absolute;
-  right: 20px;
+  right: 10px;
   bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Array", sans-serif;
 }
