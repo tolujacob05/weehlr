@@ -6,7 +6,7 @@
   box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0,
     10px 20px 20px 0px #c9c9c9;
   position: relative;
-  left: 20px;
+  left: 60px;
   top: 30px;
 }
 
@@ -39,4 +39,18 @@
   bottom: 10px;
   font-size: 18px;
   font-family: "Array", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .blob {
+    height: 100px;
+    width: 100px;
+    /* background-color: aqua; */
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0,
+      10px 20px 20px 0px #c9c9c9;
+    position: relative;
+    left: 10px;
+    top: 30px;
+  }
 }

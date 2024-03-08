@@ -1,0 +1,30 @@
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+  gap: 1.5rem;
+}
+
+footer > h1 {
+  font-size: 3rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+footer > p {
+  font-size: 1.5rem;
+  font-family: "Supreme", sans-serif;
+}
+
+.btn-2 > button {
+  border: 2px solid #000;
+  background: #000;
+  width: 220px;
+  height: 50px;
+  color: #ffff;
+  font-size: 2rem;
+  font-family: "Array", sans-serif;
+}
