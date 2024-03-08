@@ -13,10 +13,10 @@ function Pages({ isLoading, blog, setIsLoading, timeAgo }) {
 
   useEffect(
     function () {
-      setIsLoading(true);
+      // setIsLoading(true);
       const newBlog = blog.find((item) => String(item.id) === id);
       setUseBlog(newBlog);
-      setIsLoading(false);
+      // setIsLoading(false);
     },
     [blog, id, setIsLoading]
   );
