@@ -28,7 +28,7 @@ function Home({ isLoading, blog, timeAgo }) {
 
   function load(id) {
     navigate(`/pages/${id}`);
-    window.location.reload();
+    // window.location.reload();
   }
 
   if (isLoading) return <Spinner />;
