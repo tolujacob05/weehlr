@@ -27,8 +27,9 @@ function Home({ isLoading, blog, timeAgo }) {
   const navigate = useNavigate();
 
   function load(id) {
+    // window.location.reload(true);
     navigate(`/pages/${id}`);
-    // window.location.reload();
+    window.location.reload(false);
   }
 
   if (isLoading) return <Spinner />;
@@ -37,7 +38,7 @@ function Home({ isLoading, blog, timeAgo }) {
     <div className="container">
       <section className="blog">
         {blog.slice(0, page).map((item) => (
-          <div className="blog-1" key={item.id} onClick={() => load(item.id)}>
+          <div className="blog-1" key={item.id} onClick={() => !load(item.id)}>
             <div className="span">
               <span>
                 {item.yoast_head_json.twitter_misc["Est. reading time"]} Read
