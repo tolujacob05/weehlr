@@ -3,6 +3,7 @@ import Home from "./Home";
 import Spinner from "./Spinner";
 import "./css/App.css";
 import { useEffect, useState } from "react";
+// import DOMPurify from "dompurify";
 // import Logo from "./Logo";
 
 function Pages({ isLoading, blog, setIsLoading, timeAgo }) {
@@ -30,12 +31,17 @@ function Pages({ isLoading, blog, setIsLoading, timeAgo }) {
           <p>{useBlog?.yoast_head_json?.author}</p>
           <p>{timeAgo(useBlog?.date)}</p>
         </div>
+        {/* <div className="head"> */}
         <h1>{useBlog?.yoast_head_json.og_title}</h1>
+        {/* </div> */}
 
+        {/* <div className="content"> */}
         <div
           className="text"
+          // style={{ width: "100%", fontSize: "12px" }}
           dangerouslySetInnerHTML={{ __html: useBlog?.content.rendered }}
         />
+        {/* </div> */}
       </section>
 
       <section className="cont-2">
