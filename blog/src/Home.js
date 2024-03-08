@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 // const BASE_URL = "https://techcrunch.com/wp-json/wp/v2/posts";
 
-const per_page = 3;
+const per_page = 6;
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
