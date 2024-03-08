@@ -27,8 +27,9 @@ function Home({ isLoading, blog, timeAgo }) {
   const navigate = useNavigate();
 
   function load(id) {
+    // window.location.reload(true);
     navigate(`/pages/${id}`);
-    // window.location.reload();
+    // window.location.reload(true);
   }
 
   if (isLoading) return <Spinner />;
