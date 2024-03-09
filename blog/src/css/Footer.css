@@ -28,3 +28,9 @@ footer > p {
   font-size: 2rem;
   font-family: "Array", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem;
+  }
+}

@@ -20,7 +20,7 @@ function Home({ isLoading, blog, timeAgo }) {
   // const [reload, setReload] = useState
 
   const loadMore = () => {
-    setPage((prev) => prev + 3);
+    setPage((prev) => prev + 4);
     if (isLoading) return <Spinner />;
   };
 
@@ -41,7 +41,7 @@ function Home({ isLoading, blog, timeAgo }) {
           <div className="blog-1" key={item.id} onClick={() => !load(item.id)}>
             <div className="span">
               <span>
-                {item.yoast_head_json.twitter_misc["Est. reading time"]} Read
+                {item.yoast_head_json.twitter_misc["Est. reading time"]}
               </span>
               <span>{item.yoast_head_json?.og_type}</span>
             </div>

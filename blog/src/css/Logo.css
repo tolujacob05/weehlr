@@ -1,16 +1,17 @@
 .contain {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 1rem;
-  /* position: relative; */
-  padding: 1rem;
-  /* gap: 50rem; */
+  position: relative;
+  /* padding: 1rem; */
+  /* gap: 20rem; */
   /* border: 2px solid red; */
   /* width: 50%; */
-  height: 200px;
+  /* height: 100px; */
   /* min-width: 300px; */
   /* left: 0px; */
+  /* top: 2rem; */
 }
 
 .blob {
@@ -24,6 +25,8 @@
   will-change: border-radius;
   position: relative;
   /* position: absolute; */
+  margin-bottom: 0rem;
+  cursor: pointer;
 }
 
 .blob:before,
@@ -135,7 +138,8 @@
       10px 20px 20px 0px #c9c9c9;
     position: absolute;
     left: 10px;
-    top: 60px;
+    top: 0px;
+    margin-bottom: 1rem;
   }
 
   .blob > h1 {
@@ -147,12 +151,12 @@
   .socials {
     display: flex;
     gap: 2rem;
-    transform: translateY(0px);
+    transform: translateY(40px);
     /* position: absolute;
     top: 0; */
   }
 
   .socials > a {
-    transform: translateX(100px);
+    transform: translateX(250px);
   }
 }
