@@ -56,17 +56,9 @@ function Home({ isLoading, blog, timeAgo }) {
               <h1>{item.yoast_head_json.og_title}</h1>
               <p>{item.yoast_head_json?.description}</p>
               <div className="blog-author">
-                <div className="auth-btn">
-                  {/* <div className="blog-img--2">
-                    <img
-                      src={item.yoast_head_json?.schema.graph?.author.id}
-                      alt=""
-                    />
-                  </div> */}
-                  <div className="auth-name">
-                    <p>{item.yoast_head_json?.author}</p>
-                    <p>{formatDate(item.date)}</p>
-                  </div>
+                <div className="auth-name">
+                  <p>{item.yoast_head_json?.author}</p>
+                  <p>{formatDate(item.date)}</p>
                 </div>
 
                 <div className="btn" onClick={() => load(item.id)}>
