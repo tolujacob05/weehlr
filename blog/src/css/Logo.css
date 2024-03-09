@@ -1,9 +1,16 @@
 .contain {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1rem;
-  position: relative;
+  /* position: relative; */
+  padding: 1rem;
+  /* gap: 50rem; */
+  /* border: 2px solid red; */
+  /* width: 50%; */
+  height: 200px;
+  /* min-width: 300px; */
+  /* left: 0px; */
 }
 
 .blob {
@@ -15,8 +22,10 @@
   transform-style: preserve-3d;
   outline: 1px solid transparent;
   will-change: border-radius;
+  position: relative;
   /* position: absolute; */
 }
+
 .blob:before,
 .blob:after {
   content: "";
@@ -96,19 +105,37 @@
   align-items: center;
   gap: 2rem;
   transform: translateY(30px);
+  /* position: absolute; */
+  /* right: 10px; */
+  /* bottom: 2rem; */
+}
+
+.socials > a {
+  /* position: absolute; */
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .contain {
+    /* gap: 25rem; */
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .contain {
+    margin-bottom: 2rem;
+  }
+
   .blob {
+    width: 110px;
     height: 100px;
-    width: 100px;
     /* background-color: aqua; */
     border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
     box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0,
       10px 20px 20px 0px #c9c9c9;
-    position: relative;
+    position: absolute;
     left: 10px;
-    top: 30px;
+    top: 60px;
   }
 
   .blob > h1 {
@@ -118,11 +145,14 @@
   }
 
   .socials {
-    gap: 1rem;
-    transform: translateY(30px);
+    display: flex;
+    gap: 2rem;
+    transform: translateY(0px);
+    /* position: absolute;
+    top: 0; */
   }
 
-  /* .socials > a {
-    transform: translateX(-60px);
-  } */
+  .socials > a {
+    transform: translateX(100px);
+  }
 }
