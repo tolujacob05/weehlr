@@ -35,13 +35,13 @@ function Pages({ isLoading, blog, setIsLoading, timeAgo }) {
         <h1>{useBlog?.yoast_head_json.og_title}</h1>
         {/* </div> */}
 
-        {/* <div className="content"> */}
-        <div
-          className="text"
-          // style={{ width: "100%", fontSize: "12px" }}
-          dangerouslySetInnerHTML={{ __html: useBlog?.content.rendered }}
-        />
-        {/* </div> */}
+        <div className="content">
+          <div
+            className="text"
+            // style={{ width: "100%", fontSize: "12px" }}
+            dangerouslySetInnerHTML={{ __html: useBlog?.content.rendered }}
+          />
+        </div>
       </section>
 
       <section className="cont-2">

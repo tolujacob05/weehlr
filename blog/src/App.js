@@ -59,8 +59,8 @@ function App() {
 
   return (
     <>
-      <Logo />
       <BrowserRouter>
+        <Logo />
         <Routes>
           <Route
             path="/"

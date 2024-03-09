@@ -1,12 +1,19 @@
-import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./css/Logo.css";
 
 function Logo() {
+  const navigate = useNavigate();
+  function goToHome() {
+    navigate("/");
+  }
+
   return (
     <div className="contain">
-      <div className="blob">
+      {/* <Link to="/"> */}
+      <div className="blob" onClick={goToHome}>
         <h1>Blog 🚀</h1>
       </div>
+      {/* </Link> */}
 
       <div className="socials">
         <a href="https://www.figma.com/proto/9XGAZezd4zERCQGtRwbm2Z/Blog-Template-(Community)?node-id=15-57">
